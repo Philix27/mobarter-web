@@ -4,12 +4,16 @@ import React from 'react';
 import { TextP } from '@/comps';
 import { invoices } from './data';
 import { AppStores } from '@/lib';
+import { SearchInput } from '../_comps';
 
 export default function Page() {
   const store = AppStores.useSettings();
   return (
     <>
       <div className={'w-full h-full py-4 px-4 flex flex-col items-center'}>
+        {/* <div className="w-[40%] mb-4"> */}
+        <SearchInput className="w-[40%] mb-4" />
+        {/* </div> */}
         {invoices.map((val, i) => (
           <div
             key={i}

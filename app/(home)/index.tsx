@@ -1,8 +1,7 @@
 'use client';
 
 import React from 'react';
-import { JumbutronSection, HeroWithImg } from '../_comps';
-import { AppButton, TextP } from '@/comps';
+import { TextP } from '@/comps';
 import { cn, useAppRouter } from '@/lib';
 import { BsSearch } from 'react-icons/bs';
 import Link from 'next/link';

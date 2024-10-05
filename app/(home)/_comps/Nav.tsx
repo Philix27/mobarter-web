@@ -6,7 +6,7 @@ import { Drawer, TextH } from '@/comps';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useRouter } from 'next/navigation';
 import { AppStores } from '@/lib';
-import { GoSidebarCollapse } from 'react-icons/go';
+import { GoSidebarCollapse, GoSidebarExpand } from 'react-icons/go';
 import { BiFilter } from 'react-icons/bi';
 import { LuFilterX } from 'react-icons/lu';
 
@@ -30,7 +30,7 @@ export function NavbarMarketing(props: MainNavProps) {
           </Link>
         </div>
 
-        <div className="flex items-center justify-center md:gap-x-3">
+        <div className="flex items-center justify-center md:gap-x-4">
           {store.drawerIsOpen ? (
             <AiOutlineClose
               className="size-[20px] text-primary"
@@ -46,11 +46,18 @@ export function NavbarMarketing(props: MainNavProps) {
               }}
             />
           )}
-          {store.infoTabOpen && (
+          {store.infoTabOpen ? (
             <GoSidebarCollapse
               className="size-[20px] text-primary"
               onClick={() => {
                 store.update({ infoTabOpen: false });
+              }}
+            />
+          ) : (
+            <GoSidebarExpand
+              className="size-[20px] text-primary"
+              onClick={() => {
+                store.update({ infoTabOpen: true });
               }}
             />
           )}

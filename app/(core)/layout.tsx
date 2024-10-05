@@ -2,7 +2,7 @@
 import { ReactNode } from 'react';
 import { AdminSidebar } from './_comps';
 import { CoreLayoutWrapper, Drawer } from '@/comps';
-import { NavbarMarketing } from '@/(marketing)/_comps';
+import { NavbarMarketing } from '@/(home)/_comps';
 import { AppStores } from '@/lib';
 import { InfoView } from './_comps/InfoView';
 
