@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={'flex flex-col items-center justify-center w-full h-full'} style={{ overscrollBehavior: 'none' }}>
       <div className="w-[60%] h-full flex flex-col items-center justify-center">
-        <SearchInput onClick={() => router.push('/search')} />
+        <SearchInput onClick={(e: string) => router.push('/search')} />
         <div className="flex mt-4 cursor-pointer flex-wrap justify-center">
           {tags.map((val, i) => (
             <div key={i} className={cn('text-white rounded-full py-1 px-4 mx-2 my-2', val.bg)}>

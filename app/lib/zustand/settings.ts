@@ -5,6 +5,7 @@ export interface ISlice {
   sidebarOpen?: boolean;
   infoTabOpen?: boolean;
   drawerIsOpen?: boolean;
+  searchValue?: string;
 }
 
 export interface ISliceUpdate extends Required<ISlice> {
@@ -16,6 +17,7 @@ export const defaultValues: Required<ISlice> = {
   drawerIsOpen: false,
   sidebarOpen: false,
   infoTabOpen: false,
+  searchValue: '',
 };
 
 export const useSettings = create(

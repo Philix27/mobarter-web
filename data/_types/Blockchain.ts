@@ -1,4 +1,4 @@
-export type IEcosystem = 'Ethereum' | 'POLKADOT' | 'SOLANA' | 'BITCOIN' | 'COSMOS' | 'SUBSTRATE' | 'NEAR';
+export type IEcosystem = 'ETHEREUM' | 'POLKADOT' | 'SOLANA' | 'BITCOIN' | 'COSMOS' | 'SUBSTRATE' | 'NEAR';
 
 export interface ICommon {
   name: string;
@@ -10,16 +10,18 @@ export interface ICommon {
   taxon: 'BLOCKCHAIN' | 'TOOLS' | 'PACKAGE';
 }
 
-export interface IBlockchain extends ICommon {
-  layers: 'LAYER 1' | 'LAYER 2';
-}
-
-export interface ITools extends ICommon {
+export interface ITools {
   repoLink: string;
   category: 'RPC' | 'AUTH_PROVIDER' | 'WALLET';
 }
 
-export interface IPackage extends ICommon {
+export interface IPackage {
   githubLink?: string;
   language: 'SOLIDITY' | 'TS & JS' | 'PYTHON' | 'RUST';
+}
+
+export interface IBlockchain extends ICommon {
+  layers: 'LAYER 1' | 'LAYER 2';
+  tools?: ITools;
+  package?: IPackage;
 }
