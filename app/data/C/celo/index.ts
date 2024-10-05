@@ -1,12 +1,12 @@
-import { IBlockchain } from '@/data/_types';
+import { IBlockchain } from '@/types';
 
 export const celoChain: IBlockchain = {
   layers: 'LAYER 1',
-  name: 'Celo',
-  ecosystem: 'ETHEREUM',
+  name: '',
+  ecosystem: 'Ethereum',
   article: '',
   shortIntro: '',
-  logo: '/c/celo.jpg',
+  logo: '',
   baseUrl: '',
   taxon: 'BLOCKCHAIN',
 };
