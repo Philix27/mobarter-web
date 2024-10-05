@@ -10,7 +10,7 @@ import { RxDashboard } from 'react-icons/rx';
 export function InAppDrawer(props: { router: AppRouterInstance }) {
   const { router } = props;
   const pathname = usePathname();
-  const store = AppStores.useSettingsStore();
+  const store = AppStores.useSettings();
 
   const checkActive = (val: string): boolean => {
     return pathname.toLowerCase().includes(val.toLowerCase());

@@ -8,7 +8,7 @@ import { DisableZoom } from './DissableZoom';
 export function CoreLayoutWrapper(props: { children: ReactNode; hideBottomNav?: boolean }) {
   const router = useRouter();
 
-  const store = AppStores.useSettingsStore();
+  const store = AppStores.useSettings();
 
   useEffect(() => {
     document.addEventListener('gesturestart', function (e) {

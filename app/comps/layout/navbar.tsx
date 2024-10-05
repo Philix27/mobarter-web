@@ -9,7 +9,7 @@ import { LuChevronLeft } from 'react-icons/lu';
 
 export function Navbar(props: { title: string; icon?: IconType; isBack?: boolean; onIconClick?: VoidFunction }) {
   const Icon = props.icon!;
-  const store = AppStores.useSettingsStore();
+  const store = AppStores.useSettings();
   const router = useRouter();
   return (
     <div

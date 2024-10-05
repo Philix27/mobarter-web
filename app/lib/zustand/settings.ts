@@ -18,7 +18,7 @@ export const defaultValues: Required<ISlice> = {
   infoTabOpen: false,
 };
 
-export const useSettingsStore = create(
+export const useSettings = create(
   persist<ISliceUpdate>(
     (set) => ({
       ...defaultValues,

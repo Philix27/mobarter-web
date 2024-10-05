@@ -1,9 +1,9 @@
 import { useChat } from './chat';
-import { useSettingsStore } from './settings';
+import { useSettings } from './settings';
 import { useUser } from './user';
 
 export const AppStores = {
-  useSettingsStore,
+  useSettings,
   useChat,
   useUser,
 };

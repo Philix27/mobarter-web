@@ -8,7 +8,7 @@ import { HomeDrawer } from './HomeDrawer';
 import { InAppDrawer } from './InApp';
 
 export function Drawer() {
-  const store = AppStores.useSettingsStore();
+  const store = AppStores.useSettings();
   const router = useRouter();
   const path = usePathname();
 

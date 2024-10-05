@@ -23,9 +23,9 @@ export function AdminSidebar() {
 
   return (
     <div className="w-[250px] bg-card flex flex-col h-full border-r overflow-x-hidden">
-      <div className="h-[60px] flex items-center justify-center w-full bg-background">
+      {/* <div className="h-[60px] flex items-center justify-center w-full bg-background">
         <TextH>Gasonomy </TextH>
-      </div>
+      </div> */}
       {data.map((val, i) => {
         const { Icon } = val;
         return (
@@ -33,7 +33,7 @@ export function AdminSidebar() {
             <div
               key={i}
               className={cn(
-                'py-2 px-5 hover:bg-background flex items-center',
+                'py-3 px-5 hover:bg-background flex items-center',
                 checkActive(val.link) && 'bg-background'
               )}
             >
