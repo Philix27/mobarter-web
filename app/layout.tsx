@@ -105,9 +105,8 @@ export default function RootLayout({
         /> */}
       </head>
       <body
-        style={{ overscrollBehavior: 'none', overflow: 'hidden' }}
         className={cn(
-          `min-h-screen bg-background overscroll-none overflow-hidden 
+          `min-h-screen bg-background  
           font-sans antialiased`,
           fontSans.variable
         )}

@@ -5,7 +5,7 @@ import { TextH, TextP } from '@/comps';
 
 export function JumbutronSection(props: { title: string; subtitle: string }) {
   return (
-    <section className="container md:w-[80%] w-full">
+    <section className="container w-full bg-slate-200">
       <div className="flex items-center justify-center ">
         <div
           className={`
@@ -15,7 +15,7 @@ export function JumbutronSection(props: { title: string; subtitle: string }) {
     md:my-8 my-8 text-center
     `}
         >
-          <TextH v={'h2'} className="leading-loose text-xl">
+          <TextH v={'h2'} className="leading-loose text-xl text-secondary">
             {props.title}
           </TextH>
           <TextP v={'p5'} className="leading-loose">

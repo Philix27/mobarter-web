@@ -11,7 +11,7 @@ export function HeroSection(props: { title: string; subtitle: string; img: strin
         w-full 
         grid grid-cols-1
         md:grid-cols-2
-        px-2 md:px-[5%] bg-primary rounded-2xl
+        px-2 md:px-[5%] 
     `}
       >
         {props.imgFirst ? (
